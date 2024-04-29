@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
 public class Collections {
 
 	public static void main(String[] args) {
@@ -24,6 +26,13 @@ public class Collections {
 		System.out.println(check);
 		list.clone();
 		System.out.println(list);
+		System.out.println("Iterating:");
+		Iterator iterator=list.iterator();
+		while(iterator.hasNext())
+		{
+			System.out.println(iterator.next());
+			
+		}
 		
 
 	}
